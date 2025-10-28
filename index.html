@@ -6,28 +6,247 @@
   <title>Principios de Gestalt en Diseño Web</title>
   <!-- Local Bootstrap files will be served from /css and /js (copied during build) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+    .image-placeholder {
+      background: #f8f9fa;
+      border: 2px dashed #dee2e6;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+    .image-placeholder img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar bg-light sticky-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">Gestalt — Principios</a>
-      <ul class="nav">
-        <li class="nav-item"><a class="nav-link active" href="#">Proximidad</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Semejanza</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Continuidad</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Cierre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Figura–fondo</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Simetría y orden (Prägnanz)</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Región común</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Destino común</a></li>
+      <a class="navbar-brand fw-bold" href="#">Gestalt — Principios</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a class="nav-link" href="#proximidad">Proximidad</a></li>
+        <li class="nav-item"><a class="nav-link" href="#semejanza">Semejanza</a></li>
+        <li class="nav-item"><a class="nav-link" href="#continuidad">Continuidad</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cierre">Cierre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#figura-fondo">Figura–fondo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#simetria">Simetría</a></li>
+        <li class="nav-item"><a class="nav-link" href="#region-comun">Región común</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destino-comun">Destino común</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container mt-4">
-    <h1>Ejemplo</h1>
-    <p>Navbar fijado en la parte superior. Desplaza la página para ver que el nav permanece visible.</p>
-    <div style="height:1400px;">...contenido de ejemplo para probar el sticky...</div>
+  <main class="container mt-4 mb-5">
+    <!-- Hero Section -->
+    <section class="text-center py-5 mb-5">
+      <h1 class="display-4 fw-bold mb-3">Principios de Gestalt en Diseño Web</h1>
+      <p class="lead text-muted">Explora cómo la psicología de la percepción visual influye en el diseño de interfaces digitales</p>
+      <p class="text-muted">Los principios de Gestalt son fundamentales para crear experiencias de usuario intuitivas y efectivas</p>
+    </section>
+
+    <!-- Proximidad -->
+    <section id="proximidad" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h2 class="mb-4">Principio de Proximidad</h2>
+          <p class="lead">Los elementos que están cerca unos de otros tienden a percibirse como parte de un mismo grupo o unidad funcional.</p>
+          
+          <p>Este principio es uno de los más poderosos en diseño de interfaces. Cuando colocamos elementos relacionados cerca unos de otros, el cerebro humano automáticamente los asocia como pertenecientes al mismo conjunto de información.</p>
+          
+          <p>En el diseño web, la proximidad ayuda a organizar la información de manera lógica. Por ejemplo, en un formulario, colocamos la etiqueta cerca de su campo de entrada correspondiente. En una tarjeta de producto, agrupamos la imagen, el título, la descripción y el precio juntos para que el usuario los perciba como una unidad.</p>
+          
+          <p>La falta de proximidad adecuada puede crear confusión. Si los elementos relacionados están demasiado separados, el usuario puede no entender que están conectados. Por el contrario, si elementos no relacionados están muy juntos, puede causar ambigüedad en la jerarquía de la información.</p>
+          
+          <p class="mb-0">Las aplicaciones prácticas incluyen: espaciado entre secciones, agrupación de botones de acción, organización de menús de navegación, y disposición de elementos en tarjetas o paneles.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de proximidad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Semejanza -->
+    <section id="semejanza" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 mb-4">
+          <h2 class="mb-4">Principio de Semejanza</h2>
+          <p class="lead">Los elementos que comparten características visuales similares se perciben como relacionados o parte del mismo grupo.</p>
+          
+          <p>La semejanza es un principio fundamental que nos permite crear patrones y relaciones visuales sin necesidad de proximidad física. Las características que crean semejanza incluyen el color, la forma, el tamaño, la orientación, la textura y el estilo visual.</p>
+          
+          <p>En las interfaces de usuario, utilizamos este principio constantemente. Los enlaces se suelen mostrar en un color específico (tradicionalmente azul) para que los usuarios los identifiquen inmediatamente. Los botones de acción primaria comparten el mismo color y estilo en toda la aplicación para mantener la consistencia.</p>
+          
+          <p>Este principio es especialmente útil en la creación de sistemas de diseño y guías de estilo. Al mantener elementos similares visualmente consistentes, ayudamos a los usuarios a predecir el comportamiento de la interfaz y a navegar más intuitivamente.</p>
+          
+          <p class="mb-0">Ejemplos prácticos: iconos del mismo estilo, botones con el mismo diseño para acciones similares, etiquetas de estado con colores consistentes, y patrones repetitivos en listas o grids.</p>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de semejanza</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Continuidad -->
+    <section id="continuidad" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h2 class="mb-4">Principio de Continuidad</h2>
+          <p class="lead">El ojo humano tiende a seguir líneas, curvas y secuencias de elementos, prefiriendo caminos continuos y fluidos.</p>
+          
+          <p>La continuidad es crucial para guiar la atención del usuario a través de una interfaz. Cuando los elementos están alineados o siguen una trayectoria visual clara, el ojo se mueve naturalmente a lo largo de esa línea, facilitando la lectura y comprensión de la información.</p>
+          
+          <p>Este principio se aplica especialmente en el diseño de layouts y en la creación de flujos de navegación. Una barra de navegación horizontal, por ejemplo, aprovecha la continuidad para guiar el ojo del usuario de izquierda a derecha (en culturas occidentales). Las líneas de tiempo, los procesos paso a paso, y los carriles de scroll también utilizan este principio.</p>
+          
+          <p>La continuidad también ayuda a crear jerarquía visual. Los elementos que siguen una línea continua se perciben como más relacionados que aquellos que rompen esa línea. Esto es fundamental en el diseño de formularios multi-paso, tutoriales interactivos, y experiencias de onboarding.</p>
+          
+          <p class="mb-0">Casos de uso: menús de navegación, breadcrumbs (rutas de navegación), líneas divisorias, alineación de elementos en grids, y diseño de diagramas de flujo.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de continuidad</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section id="cierre" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 mb-4">
+          <h2 class="mb-4">Principio de Cierre</h2>
+          <p class="lead">El cerebro humano tiende a completar formas incompletas, llenando los espacios vacíos para crear objetos reconocibles y completos.</p>
+          
+          <p>El principio de cierre es fascinante porque demuestra cómo nuestro cerebro trabaja activamente para dar sentido a la información visual. En lugar de ver elementos separados, el cerebro "cierra" los espacios y ve formas completas, incluso cuando partes de ellas están ausentes.</p>
+          
+          <p>En diseño web, este principio nos permite ser más minimalistas y eficientes. No necesitamos dibujar cada elemento completamente si el contexto permite que el usuario complete mentalmente la forma. Esto reduce el ruido visual y crea diseños más limpios y elegantes.</p>
+          
+          <p>Los iconos son un excelente ejemplo de este principio. Muchos iconos populares utilizan formas incompletas que nuestro cerebro completa automáticamente. Un círculo con un segmento ausente puede representar carga o progreso. Tres líneas horizontales (el icono "hamburguesa") son suficientes para que entendamos que representa un menú.</p>
+          
+          <p class="mb-0">Aplicaciones comunes: iconos minimalistas, indicadores de progreso, loaders animados, elementos de navegación simplificados, y overlays o modales con fondos semi-transparentes.</p>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de cierre</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Figura-fondo -->
+    <section id="figura-fondo" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h2 class="mb-4">Principio de Figura–fondo</h2>
+          <p class="lead">El cerebro separa instintivamente los objetos (figura) del contexto que los rodea (fondo), creando profundidad y estableciendo jerarquía visual.</p>
+          
+          <p>Este es uno de los principios más fundamentales de la percepción visual. Cuando miramos cualquier escena, nuestro cerebro automáticamente decide qué elementos son importantes (figura) y cuáles forman el contexto (fondo). Esta separación es esencial para dar sentido al mundo visual que nos rodea.</p>
+          
+          <p>En el diseño de interfaces, el contraste entre figura y fondo es crucial para la usabilidad. Los elementos interactivos deben destacar claramente del fondo para que los usuarios puedan identificarlos y utilizarlos fácilmente. Un botón debe verse como un elemento que se puede pulsar, no como decoración del fondo.</p>
+          
+          <p>El uso efectivo de este principio incluye el contraste de color, las sombras (que crean profundidad), los overlays (capas semi-transparentes), y el uso estratégico del espacio en blanco. Una interfaz con pobre diferenciación figura-fondo puede ser confusa y difícil de usar.</p>
+          
+          <p>Las técnicas modernas como el modo oscuro y el diseño neumórfico juegan intensamente con este principio. Los modales, pop-ups y tooltips son ejemplos perfectos de cómo usamos figura-fondo para dirigir la atención del usuario.</p>
+          
+          <p class="mb-0">Ejemplos prácticos: modales y diálogos, cards elevadas con sombras, menús desplegables, tooltips informativos, y estados de hover que elevan elementos.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de figura-fondo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simetría y orden -->
+    <section id="simetria" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 mb-4">
+          <h2 class="mb-4">Principio de Simetría y Orden (Prägnanz)</h2>
+          <p class="lead">Las personas perciben y prefieren formas simples, simétricas y ordenadas. El cerebro interpreta escenas complejas de la manera más simple posible.</p>
+          
+          <p>El término "Prägnanz" proviene del alemán y significa "buena forma" o "simplicidad". Este principio sugiere que cuando nos enfrentamos a información visual ambigua o compleja, nuestro cerebro la organiza de la manera más simple y ordenada posible. Es la base del minimalismo en el diseño.</p>
+          
+          <p>La simetría crea una sensación de equilibrio, estabilidad y belleza. Los diseños simétricos son más fáciles de procesar mentalmente y generalmente se perciben como más atractivos. Esto no significa que todo deba ser perfectamente simétrico, pero la simetría debe ser una consideración consciente en el diseño.</p>
+          
+          <p>En interfaces web, este principio se manifiesta en layouts balanceados, sistemas de grid ordenados, y jerarquías visuales claras. Un diseño que sigue este principio reduce la carga cognitiva del usuario, permitiéndole enfocarse en el contenido y las tareas en lugar de descifrar la estructura de la página.</p>
+          
+          <p>La simplicidad también mejora el rendimiento. Menos elementos visuales significan tiempos de carga más rápidos y menos distracciones para el usuario. El movimiento del diseño flat y material design son ejemplos de cómo la industria ha abrazado la simplicidad.</p>
+          
+          <p class="mb-0">Aplicaciones: layouts de grid simétricos, diseño de logotipos, composición de landing pages, organización de dashboards, y diseño de formularios equilibrados.</p>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de simetría</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Región común -->
+    <section id="region-comun" class="mb-5 pb-5 border-bottom">
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <h2 class="mb-4">Principio de Región Común</h2>
+          <p class="lead">Los elementos que se encuentran dentro de un límite o región claramente definida se perciben como pertenecientes al mismo grupo.</p>
+          
+          <p>Este principio es relativamente moderno comparado con los principios originales de Gestalt, pero se ha vuelto fundamental en el diseño de interfaces digitales. Cuando creamos un límite visual alrededor de elementos, automáticamente los agrupamos en la mente del usuario, sin importar otras características como proximidad o semejanza.</p>
+          
+          <p>Las regiones comunes son especialmente efectivas porque pueden sobrescribir otros principios de Gestalt. Por ejemplo, elementos que no son similares en color o forma, pero están dentro del mismo contenedor, se percibirán como relacionados. Esto hace que las regiones comunes sean una herramienta poderosa para organizar información compleja.</p>
+          
+          <p>En el diseño moderno de interfaces, vemos este principio en todas partes: tarjetas (cards), paneles, secciones con fondos de color, cajas delimitadas, y contenedores con bordes. Estos elementos visuales crean "habitaciones" en la interfaz donde agrupamos información relacionada.</p>
+          
+          <p>La efectividad de las regiones comunes también se relaciona con la accesibilidad. Los límites claros ayudan a todos los usuarios, especialmente a aquellos con dificultades de atención o cognitivas, a entender la estructura de la información.</p>
+          
+          <p class="mb-0">Casos de uso: cards de productos, widgets en dashboards, secciones de contenido, paneles laterales, modales y diálogos, y agrupación de controles en formularios.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de región común</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destino común -->
+    <section id="destino-comun" class="mb-5 pb-5">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 mb-4">
+          <h2 class="mb-4">Principio de Destino Común</h2>
+          <p class="lead">Los elementos que se mueven en la misma dirección o comparten un patrón de movimiento se perciben como un grupo cohesivo.</p>
+          
+          <p>El destino común es particularmente relevante en el diseño de interfaces modernas donde el movimiento y la animación juegan un papel cada vez más importante. Cuando múltiples elementos se mueven juntos, el cerebro automáticamente los asocia como pertenecientes al mismo grupo o sistema.</p>
+          
+          <p>Este principio tiene raíces evolutivas: nuestros ancestros necesitaban identificar rápidamente grupos de objetos moviéndose juntos (como una manada de animales) para tomar decisiones de supervivencia. En el diseño digital, aprovechamos esta capacidad innata para crear experiencias más intuitivas.</p>
+          
+          <p>Las animaciones coordinadas pueden mejorar significativamente la experiencia del usuario al proporcionar feedback visual, mostrar relaciones entre elementos, y guiar la atención. Por ejemplo, cuando múltiples tarjetas se deslizan juntas desde el borde de la pantalla, el usuario entiende inmediatamente que pertenecen al mismo conjunto de datos.</p>
+          
+          <p>Sin embargo, es importante usar este principio con moderación. Demasiado movimiento puede ser distractor e incluso problemático para usuarios con sensibilidad al movimiento. Las animaciones deben ser sutiles, significativas y siempre opcionales cuando sea posible (respetando la preferencia de "prefers-reduced-motion").</p>
+          
+          <p>El destino común también se aplica a elementos que cambian de estado simultáneamente, como múltiples botones que se desactivan al mismo tiempo, o elementos que se reorganizan en respuesta a un filtro aplicado.</p>
+          
+          <p class="mb-0">Ejemplos: animaciones de carga coordinadas, transiciones de página, efectos parallax, elementos que aparecen/desaparecen juntos, reorganización animada de listas, y grupos de elementos que responden a hover simultáneamente.</p>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="image-placeholder">
+            <span class="text-muted">Añade aquí imagen/GIF de destino común</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="bg-light text-muted mt-4 py-3 border-top" role="contentinfo">
@@ -38,10 +257,8 @@
         <strong>Curso:</strong> 2DAW
       </div>
       <div class="small mt-2 mt-md-0 text-center text-md-end">
-        <span class="me-1">Lecturas recomendadas:</span>
-        <a href="https://es.wikipedia.org/wiki/Gestalt" target="_blank" rel="noopener noreferrer">Gestalt — Wikipedia</a>
-        <span class="mx-2">|</span>
-        <a href="https://www.interaction-design.org/literature/topics/gestalt-principles" target="_blank" rel="noopener noreferrer">Interaction Design — Gestalt</a>
+        <span class="me-1">GitHub:</span>
+        <a href="https://github.com/2DAWAlainLozano/RA2_2DAW_UI_BOOTSTRAP" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
     </div>
   </footer>
